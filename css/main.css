@@ -86,7 +86,10 @@ nav a:hover {
 }
 
 h1 { font-size: 6em; }
-h2 { font-size: 2.5em; }
+h2 { 
+    font-size: 2.5em;
+    text-shadow: 3px 3px #992441;
+ }
 h3 { font-size: 2em; }
 
 
@@ -265,6 +268,21 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+
+footer a, footer a:visited {
+    display: flex;
+    justify-content: center;
+    color: var(--gold-light);
+    text-decoration: none;
+    text-shadow: none;
+    font-size: 0.8em;
+}
+
+footer i {
+    margin: 0;
+    color: var(--gold-light);
+}
+
 
 #logo-title {
     display: flex;
