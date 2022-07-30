@@ -6,6 +6,7 @@
 :root {
     --gold-light: rgb(255, 237, 221);
     --gold: #f9aa77;
+    --golddark: #ff7e28;
     --red-light: rgba(234,72,108);
     --red-medium: rgba(170,24,60);
     --red-dark: rgba(138,20,56);
@@ -24,17 +25,15 @@ html {
 body {
     height: 100%;
     background-size: 100%;
+    /* font-family: Tisa, Dosis, Lato, Helvetica; */
     font-family: Tisa, Dosis, Lato, Helvetica;
     font-weight: lighter;
     margin: 0px;
     box-sizing: border-box;
-    /* background-image:
-    linear-gradient(rgba(234,72,108,0.5), rgba(170,24,60,0.5)),
-    url("../img/motifs.png"),
-    linear-gradient(0.25turn, var(--red-medium),  var(--red-dark)); */
+
     background-image:
-    linear-gradient(rgba(234,72,108,0.5), rgba(170,24,60,0.5)),
-    url("../img/motifs.png"),
+    linear-gradient(rgba(150, 0, 32, 0.5), rgba(151, 0, 38, 0.5)),
+    url("../img/motif.png"),
     linear-gradient(0.25turn, var(--red-medium), rgba(255,255,255,0.1), var(--red-medium));
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -46,7 +45,7 @@ header {
     /*background:  */
     background-image:
         linear-gradient(rgba(234,72,108,0.5), rgba(170,24,60,0.5)),
-        url("../img/motifs.png"),
+        url("../img/motif.png"),
         linear-gradient(var(--red-light), var(--red-medium));
     
     padding: 1em;
@@ -123,12 +122,16 @@ main {
 
 section {
     min-height: 300px;
-    color: var(--red-dark);
+    /* color: var(--red-dark); */
     display: flex;
     flex-direction: row;
-    font-size: 1.3em;
+    justify-content: space-around;
     margin-bottom: 3em;
     overflow: hidden;
+    
+    font-size: 1.3em;
+    color: var(--golddark);
+    text-align: center;
 
     border-style: solid;
     border-color: var(--gold);
@@ -147,8 +150,7 @@ section {
     url(../img/motif.png),
     linear-gradient(var(--gold-light), white);
 
-    color: var(--red-medium);
-    text-align: center;
+
 }
 
 section:first-child {
@@ -171,7 +173,12 @@ section h2 {
 ul {
     list-style-type: none;
     padding: 0;
+    color: var(--gold);
 }
+
+li:not(:last-child) { 
+    margin-bottom: 0.3em;  
+ }
 
 section a {
     color: var(--red-medium);
@@ -185,10 +192,9 @@ section a:hover {
 }
 
 section .third img {
-    width: 100%;
+    width: clamp(200px, 100%, 300px);
     height: auto;
     max-height: 300px;
-    max-width: 300px;
     object-fit: cover;
     box-sizing: border-box;
     border-radius: 50%;
@@ -205,6 +211,7 @@ section img:hover {
 section .third {
     flex-basis:34%; 
     flex-grow: 1;
+    min-width: 200px;
     align-items: center;
     justify-content: center;
     align-self: center;
@@ -236,6 +243,15 @@ section .twothird {
     align-items: center;
     flex-wrap: wrap;
 }
+
+.fv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 
 #contact {
     flex-direction: column;
