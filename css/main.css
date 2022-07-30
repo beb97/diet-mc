@@ -41,7 +41,7 @@ body {
 }
 
 
-header {
+header, footer {
     /*background:  */
     background-image:
         linear-gradient(rgba(234,72,108,0.5), rgba(170,24,60,0.5)),
@@ -87,24 +87,17 @@ nav a:hover {
     transition: 0.3s;
 }
 
-header h1, header h2, header h3 {
-    /* margin: 0.5em; */
-    font-size: 2em;
-}
 
 h1 {
     font-size: 7em;
 }
 
 h2 {
-    color: var(--red-medium);
-    margin: 0;
-    vertical-align: center;
+    font-size: 3em;
 }
 
 h3 {
-    /* color: var(--red-medium);
-    font-weight: bold; */
+    font-size: 2em;
 }
 
 
@@ -163,8 +156,10 @@ section h2 {
     color: var(--red-medium);
     font-size: 2em;
     font-weight: bold;
-    padding: 1em;
+    margin: 0;
+    padding: 1em 0.3em;
     padding-bottom: 0;
+    padding-top: 0.5em;
     letter-spacing: 0.07em;
     border-bottom-left-radius: .3em;
     text-align: center;
@@ -191,12 +186,16 @@ section .third img {
     border-radius: 50%;
     transition-duration: 400ms;
     opacity: 0.7;
+    border: 4px solid var(--gold);
+    filter : drop-shadow(0px 1px 1px black);
 }
 
-section img:hover {
+section .third img:hover {
     border-radius: 1em;
     transition-duration: 400ms;
     opacity: 1;
+    border: 4px solid transparent;
+    /* filter : drop-shadow(px 0px 1px black); */
 }
 
 section .third {
@@ -223,6 +222,11 @@ section .twothird {
     line-height: 2em;
 }
 
+.center {
+    margin-top: 1em;
+    line-height: 2em;
+}
+
 .third, .twothird, .threethird {
     overflow: hidden;
     box-sizing: border-box;
@@ -234,6 +238,7 @@ section .twothird {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    margin: 0 1em;
 }
 
 strong {
@@ -279,10 +284,13 @@ i {
 }
 
 footer {
-    background-image:
+    /* background-image:
     linear-gradient( rgba(170,24,60,0.5), rgba(234,72,108,0.5));
-    box-shadow:  0px -3px 1px rgba(120,10,10,1);
+    box-shadow:  0px -3px 1px rgba(120,10,10,1); */
     padding: 1em;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: bold;
 }
 
 #logo-title {
@@ -354,6 +362,10 @@ footer {
     }
 
     h2 {
+        font-size: 2em!important;
+    }
+
+    h3 {
         font-size: 1.5em!important;
     }
 
