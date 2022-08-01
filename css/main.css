@@ -14,8 +14,7 @@
 }
 
 @font-face {
-    font-family: 'kabel', arial, sans-serif;
-    ;
+    font-family: 'kabel';
     src: url('../font/kabel.otf') format('truetype');
 }
 
@@ -347,7 +346,7 @@ section .tilde {
 
 .gold {
     color: var(--gold);
-    font-family: kabel;
+    font-family: kabel, arial, sans-serif;
 }
 
 [data-aos="spin"] {
