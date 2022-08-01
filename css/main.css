@@ -16,6 +16,7 @@
 @font-face {
     font-family: 'kabel';
     src: url('../font/kabel.otf') format('truetype');
+    font-display: swap;
 }
 
 html {
