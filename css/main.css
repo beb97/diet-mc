@@ -7,14 +7,15 @@
     --gold-light: rgb(255, 237, 221);
     --gold: #f9aa77;
     --golddark: #ff7e28;
-    --red-light: rgba(234,72,108);
-    --red-medium: rgba(170,24,60);
-    --red-dark: rgba(138,20,56);
+    --red-light: rgba(234, 72, 108);
+    --red-medium: rgba(170, 24, 60);
+    --red-dark: rgba(138, 20, 56);
 
 }
 
 @font-face {
-    font-family: 'kabel';
+    font-family: 'kabel', arial, sans-serif;
+    ;
     src: url('../font/kabel.otf') format('truetype');
 }
 
@@ -35,28 +36,29 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image:
-    linear-gradient(rgba(150, 0, 32, 0.5), rgba(151, 0, 38, 0.5)),
-    url("../img/motif.webp"),
-    linear-gradient(0.25turn, var(--red-medium), rgba(255,255,255,0.1), var(--red-medium));
+        linear-gradient(rgba(150, 0, 32, 0.5), rgba(151, 0, 38, 0.5)),
+        url("../img/motif.webp"),
+        linear-gradient(0.25turn, var(--red-medium), rgba(255, 255, 255, 0.1), var(--red-medium));
 }
 
-header, footer {
+header,
+footer {
     background-image:
-        linear-gradient(rgba(234,72,108,0.5), rgba(170,24,60,0.5)),
+        linear-gradient(rgba(234, 72, 108, 0.5), rgba(170, 24, 60, 0.5)),
         url("../img/motif.webp"),
         linear-gradient(var(--red-light), var(--red-medium));
-    
+
     padding: 1em;
     line-height: normal;
     text-shadow: 5px 4px #992441;
-    box-shadow:  0px 3px 1px rgba(120,10,10,1);
+    box-shadow: 0px 3px 1px rgba(120, 10, 10, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 nav {
-    color : var(--gold);
+    color: var(--gold);
     margin-top: 2em;
     display: flex;
     flex-direction: row;
@@ -64,13 +66,16 @@ nav {
     flex-wrap: wrap;
 }
 
-nav a, nav span, nav img {
-    border-radius : 6px;
+nav a,
+nav span,
+nav img {
+    border-radius: 6px;
     font-size: larger;
     padding: 1em;
 }
 
-nav a, nav a:visited {
+nav a,
+nav a:visited {
     color: var(--gold);
     text-decoration: none;
     border-color: var(--gold);
@@ -79,18 +84,24 @@ nav a, nav a:visited {
 }
 
 nav a:hover {
-    color : navajowhite;
+    color: navajowhite;
     background: #ea486c;
     transition: 0.3s;
     text-shadow: none;
 }
 
-h1 { font-size: 6em; }
-h2 { 
+h1 {
+    font-size: 6em;
+}
+
+h2 {
     font-size: 2.5em;
     text-shadow: 3px 3px #992441;
- }
-h3 { font-size: 2em; }
+}
+
+h3 {
+    font-size: 2em;
+}
 
 
 main {
@@ -101,7 +112,7 @@ main {
     overflow: hidden;
     padding: 3em;
     background-color: white;
-    box-shadow:  0px 3px 3px 5px rgba(120,10,10,1);
+    box-shadow: 0px 3px 3px 5px rgba(120, 10, 10, 1);
 
 }
 
@@ -113,7 +124,7 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
     font-size: 1.3em;
     color: var(--golddark);
     text-align: center;
@@ -123,10 +134,10 @@ section {
     border-width: 10px 1px 5px 1px;
     border-radius: 3em 1em 2em 1em;
 
-    background-image: 
-    linear-gradient(rgba(250,250,250,0.7), rgba(250,250,250,1)),
-    url(../img/motif.webp),
-    linear-gradient(var(--gold-light), white);
+    background-image:
+        linear-gradient(rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 1)),
+        url(../img/motif.webp),
+        linear-gradient(var(--gold-light), white);
 }
 
 section:first-child {
@@ -170,7 +181,7 @@ section .third img {
     transition-duration: 400ms;
     opacity: 0.7;
     border: 4px solid var(--gold);
-    filter : drop-shadow(0px 1px 1px black);
+    filter: drop-shadow(0px 1px 1px black);
 }
 
 #welcome img {
@@ -185,7 +196,7 @@ section .third img:hover {
 }
 
 section .third {
-    flex-basis:34%; 
+    flex-basis: 34%;
     flex-grow: 1;
     min-width: 200px;
     align-items: center;
@@ -194,7 +205,7 @@ section .third {
 }
 
 section .twothird {
-    flex-basis:66%; 
+    flex-basis: 66%;
     flex-grow: 2;
 }
 
@@ -202,7 +213,7 @@ section .twothird {
     margin-top: 1em;
     text-align: left;
     display: inline-block;
-    color : var(--gold);
+    color: var(--gold);
     line-height: 2em;
 }
 
@@ -211,7 +222,9 @@ section .twothird {
     line-height: 2em;
 }
 
-.third, .twothird, .threethird {
+.third,
+.twothird,
+.threethird {
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -235,10 +248,12 @@ ul {
     color: var(--gold);
 }
 
-li:not(:last-child) { margin-bottom: 0.3em; }
+li:not(:last-child) {
+    margin-bottom: 0.3em;
+}
 
 i {
-    color : var(--gold);
+    color: var(--gold);
     margin-right: 1em;
     font-size: 1.5em;
 
@@ -260,7 +275,9 @@ i {
     flex-wrap: wrap;
 }
 
-#contact { flex-direction: column; }
+#contact {
+    flex-direction: column;
+}
 
 footer {
     padding: 1em;
@@ -269,7 +286,8 @@ footer {
     font-weight: bold;
 }
 
-footer a, footer a:visited {
+footer a,
+footer a:visited {
     display: flex;
     justify-content: center;
     color: var(--gold-light);
@@ -294,7 +312,7 @@ footer i {
 
 #logo {
     border-radius: 1em;
-    width: 100px;  
+    width: 100px;
     height: 100px;
     filter: drop-shadow(3px 3px 0px #a80d34);
     box-shadow: none;
@@ -313,11 +331,14 @@ footer i {
     text-align: center;
 }
 
-.tilde { 
-    width:50px; 
+.tilde {
+    width: 50px;
     height: 20px;
 }
-.inverse { transform: scaleX(-1); }
+
+.inverse {
+    transform: scaleX(-1);
+}
 
 section .tilde {
     filter: drop-shadow(-4px 4px 0px #e4c2ca);
@@ -325,22 +346,34 @@ section .tilde {
 
 
 .gold {
-    color : var(--gold);
-    font-family : kabel;
+    color: var(--gold);
+    font-family: kabel;
 }
 
 [data-aos="spin"] {
-    animation-delay: 0.1s;
+    animation-delay: 1s;
     animation-name: spin;
     animation-duration: 1s;
 }
 
 @keyframes spin {
-    65% { transform: rotate(360deg) scale(1.25);}
-    70% { }
-    75% {transform: scale(0.9);}
-    90% {transform: scale(1.05);}
-    100% {transform: scale(1);}
+    65% {
+        transform: rotate(360deg) scale(1.25);
+    }
+
+    70% {}
+
+    75% {
+        transform: scale(0.9);
+    }
+
+    90% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -349,26 +382,39 @@ section .tilde {
         max-height: 100%;
     }
 
-    nav img, nav span {
+    nav img,
+    nav span {
         display: none;
     }
 
-    h1 { font-size: 3em; }
-    h2 { font-size: 2em!important; }
-    h3 { font-size: 1.5em!important; }
+    h1 {
+        font-size: 3em;
+    }
 
-    .third { order: 2; }
+    h2 {
+        font-size: 2em !important;
+    }
+
+    h3 {
+        font-size: 1.5em !important;
+    }
+
+    .third {
+        order: 2;
+    }
 
     main {
         padding: 0;
-        background-color: rgba(255,255,255,0.8);
+        background-color: rgba(255, 255, 255, 0.8);
     }
-    
+
     section {
         margin-bottom: 2em;
     }
 }
 
 @media screen and (max-width: 350px) {
-    h2 img { display: none; }
+    h2 img {
+        display: none;
+    }
 }
