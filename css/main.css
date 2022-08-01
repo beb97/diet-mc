@@ -6,7 +6,7 @@
 :root {
     --gold-light: rgb(255, 237, 221);
     --gold: #f9aa77;
-    --golddark: #ff7e28;
+    --golddark: #e36714;
     --red-light: rgba(234, 72, 108);
     --red-medium: rgba(170, 24, 60);
     --red-dark: rgba(138, 20, 56);
@@ -64,6 +64,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 nav a,
@@ -331,23 +332,33 @@ footer i {
     text-align: center;
 }
 
-.tilde {
+.tilde::before, .tilde::after {
+    content: "";
     width: 50px;
     height: 20px;
-}
-
-.inverse {
-    transform: scaleX(-1);
-}
-
-section .tilde {
+    background-image: url(../img/tilde.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display:inline-block;
     filter: drop-shadow(-4px 4px 0px #e4c2ca);
+    margin: 0 0.1em;
 }
 
+.tilde::after { transform: scaleX(-1); }
+.trouge::before, .trouge::after { 
+    background-image: url(../img/tilde-rouge.png); 
+}
+.noshadow::before, .noshadow::after { filter: none; }
 
 .gold {
     color: var(--gold);
     font-family: kabel, arial, sans-serif;
+}
+
+#facebook {
+    font-size: 2em;
+    margin-right: -1.25em;
 }
 
 [data-aos="spin"] {
@@ -382,8 +393,9 @@ section .tilde {
         max-height: 100%;
     }
 
-    nav img,
-    nav span {
+    nav span,
+    nav.tilde::before,
+    nav.tilde::after {
         display: none;
     }
 
@@ -414,7 +426,8 @@ section .tilde {
 }
 
 @media screen and (max-width: 350px) {
-    h2 img {
+    .tilde::before,
+    .tilde::after {
         display: none;
     }
 }

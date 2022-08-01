@@ -41,7 +41,7 @@
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-    <link rel="preload" href="css/main.css?1" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/main.css?2" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="css/main.css">
     </noscript>
@@ -54,21 +54,21 @@
     <header>
         <div id="entete">
             <div id="logo-title" class="gold">
-                <img id="logo" src="img/logo-image.png" alt="logo M majuscule et pomme" data-aos="spin" />
+                <img id="logo" src="img/logo-image.webp" alt="logo M majuscule et pomme" data-aos="spin" />
                 <h1>MURIEL CRÉZÉ</h1>
             </div>
             <h2 class="gold">DIETETICIENNE & NUTRITIONNISTE</h2>
             <h3 class="gold">spécialisée en nutrition sportive</h3>
         </div>
 
-        <nav class="">
-            <img class="tilde" src="img/tilde.png" aria-hidden="true" />
+        <nav class="tilde noshadow">
+            <!-- <img class="tilde" src="img/tilde.png" aria-hidden="true" /> -->
             <a href="#about">A propos</a>
             <span> • </span>
             <a href="#tarif">Tarifs</a>
             <span> • </span>
             <a href="#contact">Contact</a>
-            <img class="tilde inverse" src="img/tilde.png" aria-hidden="true" />
+            <!-- <img class="tilde inverse" src="img/tilde.png" aria-hidden="true" /> -->
         </nav>
     </header>
 
@@ -79,14 +79,16 @@
                 <div class="third" data-aos="zoom-in" style="order: 0;">
                     <img src="img/muriel-zoom.webp" alt="radio d'une main avec le pouce levé">
                 </div>
-                <h3> <img class="tilde" src="img/tilde.png" aria-hidden="true" />
-                    <strong>Muriel Crézé</strong>
-                    <img class="tilde inverse" src="img/tilde.png" aria-hidden="true" />
+                <h3>
+                    <!-- <span class="tilde" aria-hidden="true"></span> -->
+                    <strong class="tilde">Muriel Crézé</strong>
+                    <!-- <span class="tilde inverse" aria-hidden="true"></span> -->
                     <div>Diététicienne nutritionniste sur Nantes depuis 2013</div>
                 </h3>
 
-                <p data-aos="slide-right" data-aos-delay="100">La diététique est un sujet passionnant, qui a le pouvoir
-                    de trasnformer la vie,<br>
+                <p data-aos="slide-right" data-aos-delay="100">La diététique est un sujet passionnant, qui a le
+                    potentiel
+                    de transformer la vie,<br>
                     et c’est avec grand plaisir que j’accompagne mes patients.
                 </p>
                 <p data-aos="slide-right" data-aos-delay="200">Notre objectif sera d'améliorer votre bien-être, tout en
@@ -100,11 +102,7 @@
 
         <section data-aos="fade-left">
             <div class="twothird">
-                <h2>
-                    <img class="tilde" src="img/tilde-rouge.png" aria-hidden="true" />
-                    Sportif
-                    <img class="tilde inverse" src="img/tilde-rouge.png" aria-hidden="true" />
-                </h2>
+                <h2 class="tilde trouge">Sportif</h2>
                 <p><strong>Soutien du sportif dans son effort</strong></p>
                 <div class="left-center">
                     <i class="fas fa-medal"></i> Compétition<br />
@@ -120,10 +118,7 @@
         </section>
         <section data-aos="fade-right">
             <div class="twothird">
-                <h2>
-                    <img class="tilde" src="img/tilde-rouge.png" aria-hidden="true" /> Bien portant <img
-                        class="tilde inverse" src="img/tilde-rouge.png" aria-hidden="true" />
-                </h2>
+                <h2 class="tilde trouge"> Bien portant </h2>
 
                 <p><strong>Amélioration de votre quotidien</strong></p>
                 <div class="left-center">
@@ -140,10 +135,7 @@
 
         <section data-aos="fade-left">
             <div class="twothird">
-                <h2>
-                    <img class="tilde" src="img/tilde-rouge.png" aria-hidden="true" /> Pathologies
-                    <img class="tilde inverse" src="img/tilde-rouge.png" aria-hidden="true" />
-                </h2>
+                <h2 class="tilde trouge"> Pathologies </h2>
                 <p><strong>Accompagnement du patient dans son pacours</strong></p>
                 <div class="left-center">
                     <i class="las la-ambulance"></i> IRC<br />
@@ -162,14 +154,10 @@
             <div class="threethird">
                 <div class="fh">
                     <div class="twothird">
-                        <h2>Tarifs</h2>
+                        <h2 class="">Tarifs</h2>
                         <div class="center">
-                            <strong>
-                                <img class="tilde" src="img/tilde.png" aria-hidden="true" />
-                                Consultation : 50€
-                                <img class="tilde inverse" src="img/tilde.png" aria-hidden="true" />
-                            </strong><br />
-
+                            <strong class="tilde"> Consultation : 50€ </strong>
+                            <br />
                             Suivi : 40€<br />
                         </div>
                     </div>
@@ -177,10 +165,11 @@
                 <div class="fh">
                     <div class="twothird">
                         <h2>Réductions</h2>
-                        <div class="left-center">
+                        <div class="center" style="line-height: 2em;">
                             <strong>Visio : -5€</strong><br />
                             Couple : -5€ / pers<br />
                             Etudiants : -10€<br />
+                            <br />
                         </div>
                     </div>
                 </div>
@@ -224,16 +213,19 @@
             <div class="threethird">
                 <h2>Contact</h2>
                 <p>Comment me joindre ?</p>
-                <div class="fh">
-                    <div class="left-center">
-                        <i class="fa fa-phone-square fa-fw"></i>
-                        <a href="tel:0636743817"><strong>06 36 74 38 17</strong></a>
+                <div class="fv">
+                    <div class="center">
+                        <strong class="tilde">
+                            <!-- <i class="fa fa-phone-square fa-fw"></i> -->
+                            <a href="tel:0636743817"><strong>06 36 74 38 17</strong></a>
+                        </strong>
                         <br />
-                        <i class="fa fa-envelope fa-fw "></i>
-                        <a href="mailto:dietetique.mc@gmail.com">dietetique.mc@gmail.com</a>
+                        <!-- <i class="fa fa-envelope fa-fw "></i> -->
+                        <a href="mailto:dietetique.mc@gmail.com"> dietetique.mc@gmail.com </a>
                         <br />
-                        <i class="fab fa-facebook-square fa-fw"></i>
-                        <a href="https://www.facebook.com/Dietetique44">Dietetique MC</a>
+
+                        <a href="https://www.facebook.com/Dietetique44" id="facebook" title="facebook"><i
+                                class="fab fa-facebook-square fa-fw"></i></a>
                         <br />
 
                     </div>
@@ -249,7 +241,7 @@
             "Que la diététique soit ta première médecine"
             <br />
             <br />
-            <em>Platon</em>
+            <em> - Platon -</em>
         </p>
     </footer>
 

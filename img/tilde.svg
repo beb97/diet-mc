@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="32"
+   height="12.8"
+   viewBox="0 0 32 12.8"
+   sodipodi:docname="tilde.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="20.265625"
+     inkscape:cx="14.77872"
+     inkscape:cy="-4.9838088"
+     inkscape:window-width="1801"
+     inkscape:window-height="1057"
+     inkscape:window-x="2031"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g8">
+    <g
+       id="g224"
+       transform="translate(0.34541249,-0.04934513)">
+      <path
+         style="fill:#b9b9b9;fill-opacity:1;stroke-width:0.32"
+         d="M 5.4379283,12.181011 C 3.0696537,11.460614 1.2074606,9.7405187 0.82491459,7.92 0.72321158,7.436 0.55700003,6.6471037 0.45555562,6.166897 L 0.27111123,5.2937936 1.0682818,6.1539549 C 2.0773975,7.2428086 2.9933053,7.4676416 5.6846192,7.2871517 8.3289546,7.1098128 10.447755,6.3086451 14.4,3.991665 19.072404,1.2524959 20.703632,0.578008 23.089917,0.39851712 26.113658,0.17107831 27.865315,0.51754467 29.643183,1.6947107 L 31.191673,2.72 29.831176,2.9021323 c -0.887328,0.1187883 -2.054459,0.6708101 -3.355836,1.58722 -7.073724,4.981208 -10.354539,6.7297017 -14.360591,7.6534057 -1.61411,0.372176 -5.5057637,0.394472 -6.6768207,0.03825 z"
+         id="path226" />
+    </g>
+  </g>
+</svg>
