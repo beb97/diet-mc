@@ -425,6 +425,14 @@ footer i {
     }
 }
 
+
+@media screen and (max-width: 400px) {
+    section h2.tilde::before,
+    section h2.tilde::after {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 350px) {
     .tilde::before,
     .tilde::after {
