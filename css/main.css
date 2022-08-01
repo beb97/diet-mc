@@ -6,18 +6,12 @@
 :root {
     --gold-light: rgb(255, 237, 221);
     --gold: #f9aa77;
-    --goldmedium : #ea8341;
+    --goldmedium: #ea8341;
     --golddark: #e36714;
     --red-light: rgba(234, 72, 108);
     --red-medium: rgba(170, 24, 60);
     --red-dark: rgba(138, 20, 56);
 
-}
-
-@font-face {
-    font-family: 'kabel';
-    src: url('../font/kabel.otf') format('truetype');
-    font-display: swap;
 }
 
 html {
@@ -317,7 +311,8 @@ footer i {
     text-align: center;
 }
 
-.tilde::before, .tilde::after {
+.tilde::before,
+.tilde::after {
     content: "";
     width: 50px;
     height: 20px;
@@ -325,16 +320,24 @@ footer i {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    display:inline-block;
+    display: inline-block;
     filter: drop-shadow(-4px 4px 0px #e4c2ca);
     margin: 0 0.1em;
 }
 
-.tilde::after { transform: scaleX(-1); }
-.trouge::before, .trouge::after { 
-    background-image: url(../img/tilde-rouge.png); 
+.tilde::after {
+    transform: scaleX(-1);
 }
-.noshadow::before, .noshadow::after { filter: none; }
+
+.trouge::before,
+.trouge::after {
+    background-image: url(../img/tilde-rouge.png);
+}
+
+.noshadow::before,
+.noshadow::after {
+    filter: none;
+}
 
 .gold {
     color: var(--gold);
@@ -353,6 +356,12 @@ footer i {
     animation-delay: 1s;
     animation-name: spin;
     animation-duration: 1s;
+}
+
+@font-face {
+    font-family: 'kabel';
+    src: url('../font/kabel.otf') format('truetype');
+    font-display: swap;
 }
 
 @keyframes spin {
@@ -415,6 +424,7 @@ footer i {
 
 
 @media screen and (max-width: 400px) {
+
     section h2.tilde::before,
     section h2.tilde::after {
         display: none;
@@ -422,6 +432,7 @@ footer i {
 }
 
 @media screen and (max-width: 350px) {
+
     .tilde::before,
     .tilde::after {
         display: none;
